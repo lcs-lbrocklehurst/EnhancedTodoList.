@@ -4,10 +4,11 @@
 //
 //  Created by Lewis Brocklehurst on 2024-01-26.
 //
-
+import Observation
 import Foundation
 
-struct TodoItem: Identifiable {
+@Observable
+class TodoItem: Identifiable {
     
     let id = UUID()
     var details: String
